@@ -11,5 +11,6 @@ set -x
 
 # linux
 GOOS=linux GOARCH=amd64 go build -o release/linux/amd64/drone-runner-ssh
+GOOS=linux GOARCH=ppc64le go build -o release/linux/ppc64le/drone-runner-ssh
 GOOS=linux GOARCH=arm64 go build -o release/linux/arm64/drone-runner-ssh
 GOOS=linux GOARCH=arm   go build -o release/linux/arm/drone-runner-ssh
